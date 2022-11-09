@@ -18,14 +18,14 @@ EXCEPT
 
 4.
 (SELECT last_name FROM actor)
-UNION
+UNION 
 (SELECT last_name FROM customer);
 
 (SELECT last_name FROM actor)
-INTERSECT
+INTERSECT ALL
 (SELECT last_name FROM customer);
 
 (SELECT last_name FROM actor)
-EXCEPT
+EXCEPT ALL
 (SELECT last_name FROM customer);
 
